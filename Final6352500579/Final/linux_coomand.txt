@@ -1,0 +1,16 @@
+mkdir Final2
+cd Final2
+touch ROBOT_CLASS.txt
+git init
+git add ROBOT_CLASS.txt
+git status
+git commit -m "ADD ROBOT_CLASS.txt"
+git log
+git log --all --decorate --oneline --graph
+git remote add origin https://github.com/robot-class/final.git
+git remote -v
+ssh-keygen -t ed25519 -C "rae6352500579@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+git push origin robot_dev
